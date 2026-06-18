@@ -1,0 +1,36 @@
+
+html { scroll-behavior: smooth; }
+body {
+  background:
+    radial-gradient(circle at top left, rgba(251, 191, 36, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.10), transparent 20%),
+    linear-gradient(180deg, #fff8ef 0%, #fffdf8 24%, #f8fafc 100%);
+}
+::selection { background: rgba(249, 115, 22, 0.20); }
+.glass-card {
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(16px);
+}
+.hero-panel {
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(30, 41, 59, 0.72)),
+    radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.20), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.18), transparent 28%);
+}
+.movie-card { transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.movie-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(15, 23, 42, 0.15); border-color: rgba(249, 115, 22, 0.28); }
+.movie-card .poster, .detail-poster img, .hero-slide img { object-fit: cover; }
+.movie-card .poster { aspect-ratio: 2 / 3; background: linear-gradient(135deg, #fde68a, #bfdbfe 55%, #e9d5ff); }
+.poster-overlay { background: linear-gradient(180deg, transparent 0%, rgba(15,23,42,0.08) 55%, rgba(15,23,42,0.72) 100%); }
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.category-pill { background: linear-gradient(135deg, rgba(255,255,255,.85), rgba(255,255,255,.7)); border: 1px solid rgba(255,255,255,.72); }
+.category-pill:hover { transform: translateY(-2px); border-color: rgba(249,115,22,.28); }
+.player-wrap { background: #020617; border: 1px solid rgba(148,163,184,.20); }
+.player-overlay { background: linear-gradient(180deg, rgba(15,23,42,.10), rgba(15,23,42,.78)); }
+.video-gradient { background: radial-gradient(circle at 50% 20%, rgba(251,191,36,.20), transparent 25%), radial-gradient(circle at 10% 80%, rgba(59,130,246,.20), transparent 20%), linear-gradient(180deg, #0f172a, #111827); }
+.kbd { display:inline-flex; align-items:center; justify-content:center; min-width:1.65rem; padding:0 .35rem; border-radius:.5rem; background:rgba(15,23,42,.08); border:1px solid rgba(15,23,42,.08); font-size:.75rem; }
